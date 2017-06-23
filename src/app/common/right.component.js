@@ -6,17 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var RightComponent = (function () {
+    function RightComponent() {
     }
-    return AppComponent;
+    return RightComponent;
 }());
-AppComponent = __decorate([
+RightComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n  <app-header></app-header>\n  <div class=\"row\">\n    <app-left-navigation></app-left-navigation>\n    <app-right-content></app-right-content>\n  </div>\n  <app-footer></app-footer>\n  ",
+        selector: 'app-right-content',
+        template: "\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-8\">\n        <p class=\"right-paragraph\">\n            Right Component\n        </p>\n    </div>\n    ",
+        styleUrls: [
+            './right.component.css'
+        ]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], RightComponent);
+exports.RightComponent = RightComponent;
+//# sourceMappingURL=right.component.js.map

@@ -6,17 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    return AppComponent;
+    return FooterComponent;
 }());
-AppComponent = __decorate([
+FooterComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n  <app-header></app-header>\n  <div class=\"row\">\n    <app-left-navigation></app-left-navigation>\n    <app-right-content></app-right-content>\n  </div>\n  <app-footer></app-footer>\n  ",
+        selector: 'app-footer',
+        templateUrl: './footer.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], FooterComponent);
+exports.FooterComponent = FooterComponent;
+//# sourceMappingURL=footer.component.js.map

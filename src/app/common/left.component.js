@@ -6,17 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var LeftComponent = (function () {
+    function LeftComponent() {
     }
-    return AppComponent;
+    return LeftComponent;
 }());
-AppComponent = __decorate([
+LeftComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n  <app-header></app-header>\n  <div class=\"row\">\n    <app-left-navigation></app-left-navigation>\n    <app-right-content></app-right-content>\n  </div>\n  <app-footer></app-footer>\n  ",
+        selector: 'app-left-navigation',
+        template: "\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-4\">\n        <p class=\"left-paragraph\">\n            Left Component\n        </p>\n    </div>\n    ",
+        styles: [
+            "\n            .left-paragraph{\n                border: 1px solid red;\n                height: 300px;\n            }\n        "
+        ]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], LeftComponent);
+exports.LeftComponent = LeftComponent;
+//# sourceMappingURL=left.component.js.map
